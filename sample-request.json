@@ -1,0 +1,22 @@
+{
+  "transactions": [
+    { "id": "tx1", "timestamp": "2024-01-15 09:30:00", "amount": 1000.00 },
+    { "id": "tx2", "timestamp": "2024-02-20 10:00:00", "amount": 500.00 },
+    { "id": "tx3", "timestamp": "2024-03-10 14:00:00", "amount": 2000.00 }
+  ],
+  "qRules": [
+    { "id": "q1", "startTime": "2024-02-01 00:00:00", "ceilingOverride": 1500.00 }
+  ],
+  "pRules": [
+    { "id": "p1", "startTime": "2024-01-01 00:00:00", "delta": 100.00 },
+    { "id": "p2", "startTime": "2024-03-01 00:00:00", "delta": 50.00 }
+  ],
+  "kPeriods": [
+    { "id": "K1", "startInclusive": "2024-01-01 00:00:00", "endExclusive": "2024-02-01 00:00:00" },
+    { "id": "K2", "startInclusive": "2024-02-01 00:00:00", "endExclusive": "2024-03-01 00:00:00" },
+    { "id": "K3", "startInclusive": "2024-03-01 00:00:00", "endExclusive": "2024-04-01 00:00:00" }
+  ],
+  "defaultCeiling": 2000.00,
+  "inflationRate": 0.02,
+  "taxCap": 500.00
+}
